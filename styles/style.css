@@ -34,6 +34,7 @@ body{
 
 .links{
     display: flex;
+    flex-wrap: wrap;
     gap: 25px;
 }
 
@@ -67,7 +68,7 @@ body{
 
 .images img{
     height: 175px;
-    width: 175px;
+    width: 175px;;
     border: 5px solid #3882F6;
     border-radius: 15px;
     margin-bottom: 15px;
@@ -176,9 +177,12 @@ a,
 }
 
 .first-section img{
-    width: 530px;
-    height: 300px;
+    max-width: 530px;
+    max-height: 300px;
+    min-width: 265px;
+    min-height: 150px;
     margin-top: 15px;
+    flex: 0 1 530px;
 }
 
 button{
